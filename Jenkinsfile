@@ -6,7 +6,7 @@
 			sh 'pwd'
 			sh 'ls -ltr'
 			sh 'pwd'
-			sh '/usr/local/bin/helm upgrade --install helmexample --set image.repository=registry.hub.docker.com/mzm1/devopjava --set image.tag=latest'
+			sh '/usr/local/bin/helm upgrade --install mzmhelloworld --set image.repository=registry.hub.docker.com/mzm1/devopjava --set image.tag=latest'
 			}
 		}
 
