@@ -16,6 +16,8 @@ spec:
       labels:
         app: regapp
     spec:
+      imagePullSecrets:
+      - name: "dockerhub"
       containers:
       - name: regapp
         image: mzm1/devopjava
@@ -28,7 +30,7 @@ spec:
             memory: '500Mi'
           requests:
             cpu: '1'
-            memory: '500Mi'    
+            memory: '500Mi'
   strategy:
     type: RollingUpdate
     rollingUpdate:
