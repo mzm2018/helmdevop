@@ -20,7 +20,7 @@ spec:
       - name: "dockerhub"
       containers:
       - name: regapp
-        image: mzm1/devopjava
+        image: mzm1/devopjava:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
